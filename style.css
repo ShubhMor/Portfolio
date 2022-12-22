@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+
+body {
+   
+ background-color: white;
+ width: 100;
+}
+
+
+
+.main {
+    width: 100;
+    height: 450px;
+    background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+    border: 5px solid white;
+    box-shadow: 8px 8px grey;
+}
+
+.hb {
+  float: left; 
+  padding: 3px 3px 0px 0px;
+  background-color: white;
+}
+.hb button {
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px -2.5px grey;
+  font-size: smaller;
+  margin: 0px 1px 4px 1px;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hb button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 2px -4.5px aqua;
+  border: 2px solid white;
+
+}
+
+
+.smi {
+  padding: 3px 3px 0px 0px;
+  float: right; 
+  background-color: white;
+
+}
+.smi img {
+  margin: 0px 0px 0px 7px;
+  border: 0.5px solid black;
+  box-shadow: 0.5px -0.8px grey;
+  cursor: pointer;
+}
+#ig{
+  width: 16px;
+}
+
+
+div.transbox {
+  position: sticky;
+    font-size: 2rem;
+    width: 80;
+    height: 30;
+    margin: 100px;
+    
+    background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+    color: white;   
+    border: 3px solid white;
+    padding: 20px;
+    font-family: 'Edu QLD Beginner', cursive;
+  }
+
+  #hello {
+    font-size: x-large;
+  }
+  #world {
+    font-size: medium;
+  }
+  #name {
+    font-size: xx-large;
+    padding :0px 0px 0px 100px;
+  }
+  #thisside {
+    font-size: x-small;
+    padding :0px 0px 0px 220px;
+  }
+  #thissde {
+    font-size: small;
+    padding :0px 0px 0px 0px;
+  }
+
+
+.box3 {
+  position: fixed;
+ bottom: 0px;
+  width: 100vw;
+  height: 9vh;
+  background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+}
+
+.textbb{
+  width: 20vw;
+  position: relative;
+  animation: mymov 15s infinite ;
+  animation-fill-mode: forwards;
+
+
+}
+
+@keyframes mymov {
+  from {left: 0px;}
+  to {left: 100vw;background-color: rgb(255, 255, 255);}
+}
+
+#k {
+  font-size: large;
+  animation: both 2s;
+  color: #48b1bf;
+}
+
+:root {
+  --main-color: white;
+  --point-color: #06beb6 ;
+  --size: 5px;
+}
+
+.loader {
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 100vw;
+  height: 30vh;
+  position: fixed;
+  
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+  z-index: 100000;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
+}

@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+
+body {
+   
+ background-color: white;
+ width: 100;
+}
+
+
+
+.main {
+    width: 100;
+    height: 50px;
+    background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+    border: 5px solid white;
+    box-shadow: 8px 8px grey;
+}
+
+.hb {
+  float: left; 
+  padding: 3px 3px 0px 0px;
+  background-color: white;
+}
+.hb button {
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px -2.5px grey;
+  font-size: smaller;
+  margin: 0px 1px 4px 1px;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hb button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 2px -4.5px aqua;
+  border: 2px solid white;
+
+}
+
+
+.smi {
+  padding: 3px 3px 0px 0px;
+  float: right; 
+  background-color: white;
+
+}
+.smi img {
+  margin: 0px 0px 0px 7px;
+  border: 0.5px solid black;
+  box-shadow: 0.5px -0.8px grey;
+  cursor: pointer;
+}
+#ig{
+  width: 16px;
+}
+
+.box3 {
+  position: fixed;
+ bottom: 0px;
+  width: 100vw;
+  height: 9vh;
+  background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+}
+
+.textbb{
+  width: 20vw;
+  position: relative;
+  animation: mymov 15s infinite ;
+  animation-fill-mode: forwards;
+
+
+}
+
+@keyframes mymov {
+  from {left: 0px;}
+  to {left: 100vw;background-color: rgb(255, 255, 255);}
+}
+
+#k {
+  font-size: large;
+  animation: both 2s;
+  color: #48b1bf;
+}
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.container{
+  width: 85%;
+  height: 20vh;
+  background-image: linear-gradient(to left,#06beb6 , #48b1bf);
+  border-radius: 6px;
+  margin: 10vh 2vw 10vh 2vw ;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6);
+padding: 2vh 2vw 2vh 2vw;
+}
+.container .content{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.container .content h3{
+    color: white;
+    font-size: large;
+    font-style: italic;
+
+}
+
+.center {
+    height: 9vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    padding: 0px;
+    margin: 0;
+
+  }
+  .wave {
+    float: right;
+    width: 10px;
+    height: 9vh;
+    background: linear-gradient(45deg,#17fff3, #fff);
+    margin: 15px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+  }
+  .wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
